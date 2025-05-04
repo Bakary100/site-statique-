@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>diakhite E-commerce</title>
+	<link rel="icon" type="image/ico" href="image/nnn.gif">
+	<link rel="stylesheet" type="text/css" href="./vue/style/style.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./icons-1.9.1/font/bootstrap-icons.css">
+	<script type="text/javascript" src="./bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+	<header class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="container">
+			<a href="index.html" class="navbar-brand" title="Afficher mon site">
+				<img src="image/nnn.gif" width="70px" class="rounded-circle">
+				diakhite E-commerce
+			</a>
+			<form class="form-inline">
+				<input type="form-control mr-sm-2" class="border border-primary border-2 p-1 rounded" type="Recherche" placeholder="Recherche" aria-label="Recherche">
+				<button type="submit" class="btn btn-outline-info my-2 my-sm-0">
+					Recherche
+				</button>
+			</form>
+			<button type="button" title="Afficher menu" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#bakary"> 
+				<i class="navbar-toggler-icon" aria-controls="bakary"></i>
+			</button>
+			<nav class="nav offcanvas offcanvas-end" id="bakary">
+				<div class="offcanvas-header">
+					<h5>
+						<a href="index.html" class="navbar-brand text-dark">
+							Mon site
+						</a>
+					</h5>
+					<button type="button" title="Fermer" class="btn btn-close btn-outline-danger" data-bs-dismiss="offcanvas"></button>
+				</div>
+				<div class="offcanvas-body bg-dark">
+					<ul class="navbar-nav  navbar-pills">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active">
+								<i class="bi-house-fill"></i>
+								Acceuil
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="vue/contact/contact.html" class="nav-link">
+								<i class="bi-telephone-fill"></i>
+								Contact
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="vue/panier/panier.html" class="nav-link">
+								<i class="bi-cart-check-fill"></i>
+								Panier
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" title="Afficher mon compte">
+								<img src="./bak.jpg" width="25" height="25" alt="Bakary" class="rounded-circle">
+								Afficher mon compte
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<span class="dropdown-header">
+										Mon compte
+									</span>
+									<li class="dropdown-item">
+										<a href="vue/connexion/Connexion.html" class="nav-link text-dark" title="Mon profil">
+											<i class="bi-person-fill"></i>
+											Se connecter
+										</a>
+									</li>
+								</li>
+								<li class="dropdown-item">
+									<a href="#" class="nav-link text-dark" title="Confidentalité">
+										<i class="bi-lock-fill"></i>
+										Confidentialité
+									</a>
+								</li>
+								<hr class="dropdown-divider">
+								<li>
+									<span class="dropdown-header">
+										déconnexion
+									</span>
+									<li class="dropdown-item">
+										<a href="#" class="nav-link text-dark" title="Se déconnexion">
+											<i class="bi-power"></i>
+											Se déconnecter
+										</a>
+									</li>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="home-main bg-secondary mt-2">
+		<div class="container">
+			<h1 class="bg-white p-5 rounded shadow-lg text-center text-dark p-2 m-2">Bienvenue chez diakhite E-commerce</h1>
+			<div class="p-5">
+				<div class="row classe">
+					<div class="col-sm-3 px-0 ms-auto rounded border border-3 bg-white shadow-lg">
+						<!-- <button type="button" title="voir plus" class="navbar-toggler" data-bs-toggle="nav-item" data-bs-target="#liste">
+							<i class="navbar-toggler-icon"></i>
+						</button> -->
+						<ul class="navbar-nav navbar-pills" id="liste">
+							<li class="nav-item">
+								<a href="modele/informatique/indexinf.html #inf" class="text-decoration-none text-dark">
+									<img src="./image/laptop.png" width="25px" class="rounded-circle">
+									Informatique
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/Electromenager/indexelectro.html #electro" class="text-decoration-none text-dark">
+									<img src="./image/electro.jpeg" width="25px" class="rounded-circle">
+									Electroménager
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexmale.html #vetH" class="text-decoration-none text-dark">
+									<img src="./image/vete1.png" width="25px" class="rounded-circle">
+									Vétéments hommes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexmale.html #chaussH" class="text-decoration-none text-dark">
+									<img src="./image/chaus1.png" width="25px" class="rounded-circle">
+									chaussures hommes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexmale.html #MtH" class="text-decoration-none text-dark">
+									<img src="./image/Watch.jpeg" width="25px" class="rounded-circle">
+									Montres pour hommes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexmale.html #parfH" class="text-decoration-none text-dark">
+									<img src="./image/parf.png" width="25px" class="rounded-circle">
+									parfums homme
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexfemale.html #vetF" class="text-decoration-none text-dark">
+									<img src="./image/vetF.png" width="25px" class="rounded-circle">
+									mode femmes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexfemale.html #chaussF" class="text-decoration-none text-dark">
+									<img src="./image/chaussF.png" width="25px" class="rounded-circle">
+									chaussures pour femmes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexfemale.html #mtrF" class="text-decoration-none text-dark">
+									<img src="./image/mt.jpeg" width="25px" class="rounded-circle">
+									Montres pour femmes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/mode/indexfemale.html #parfF" class="text-decoration-none text-dark">
+									<img src="./image/parffem.jpeg" width="25px" class="rounded-circle">
+									Parfums pour femmes
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/sport/indexSport.html #spo" class="text-decoration-none text-dark">
+									<img src="./image/sport.png" width="25px" class="rounded-circle">
+									Articles d' sport
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="modele/sport/indexSport.html #jeu" class="text-decoration-none text-dark">
+									<img src="./image/" width="25px" class="rounded-circle">
+									Articles d' sport
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 px-0 mx-auto rounded border border-3">
+						<div class="carousel slide" id="bak" data-bs-ride="carousel" data-bs-pause="false" data-bs-keyboard="false" data-bs-touch="false" data-bs-wrap="false" tabindex="-1">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#bak" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+								<button type="button" data-bs-target="#bak" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#bak" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#bak" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							</div>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./image/SN_W20_USERNEEDS_BELLI_712x384.jpg" class="d-block w-150" data-bs-interval="1000">
+								</div>
+								<div class="carousel-item">
+									<img src="./image/SN_W20_USERNEEDS_SOLOU_712x384.jpg" class="d-block w-150" data-bs-interval="1000">
+								</div>
+								<div class="carousel-item">
+									<img src="./image/SN_W25_JA_LIVE_PAGE_712x384.jpg" class="d-block w-150" data-bs-interval="1000">
+								</div>
+								<div class="carousel-item">
+									<img src="./image/SN_Week21_ADS_ASTECH_Jumia_06-2023_712x384.jpg" class="d-block w-150" data-bs-interval="1000">
+								</div>
+								<button type="button" class="carousel-control-prev" data-bs-target="#bak" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">précedent</span>
+								</button>
+								<button type="button" class="carousel-control-next" data-bs-target="#bak" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">suivant</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<aside class="col-xl-2 px-0 mx-auto rounded border border-3 bg-white">
+						<div class="mx-2 rounded  mb-3 p-2 rounded border border-3 bg-white mt-2">
+							<span class="fw-bold">Jour Ouvrables :<span class="text-danger"> Du Lundi au Samedi</span></span>
+							<br>
+							<span class="fw-bold">Horiare : JOUR DE 8H a 13H SOIR : <span class="text-danger">16H a 20H</span></span>
+						</div>
+						<div class="mx-3 rounded  mb-3 p-2 rounded border border-3">
+							<span><a href="payement.html" class="text-decoration-none text-dark fw-bold">Commendez au : <span class="text-danger">77 184 12 96</span></a></span>
+							<br>
+							<span><a href="#" class="text-decoration-none text-dark fw-bold">Centre D'aide</a></span>
+							<br>
+							<span><a href="#" class="text-decoration-none text-dark fw-bold">Vendez chez nous</a></span>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<section class="bg-white rounded shadow-lg position-relative mt-2">
+				<a href="./modele/informatique/indexinf.html" class="text-decoration-none text-dark fw-bold position-absolute end-0 mt-2 ">
+					Voir plus
+					<i class="bi-chevron-right"></i>
+				</a>
+				<h2 class="bg-warning rounded-top text-center">Informatique</h2>
+				<div class="p-4">
+					<div class="row justify-content-responsive">
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article class="time">
+								<a href="modele/informatique/inf1.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+											
+										</div>
+										<img src="control/informatique/image1.jpg" id="inf1.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Hp Mini HP Stream - Ecran 11" Dual Core - RAM 4Go</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													182 500 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+													
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article class="time">
+								<a href="modele/informatique/inf2.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+											
+										</div>
+										<img src="control/informatique/image2.jpg" id="inf2.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Mini Souris Sans Fil Rechargeable 2.4G</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													3 480 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+													
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article class="time">
+								<a href="modele/informatique/inf3.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+											
+										</div>
+										<img src="control/informatique/image3.jpg" id="inf3.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Lenovo Ideapad 3 - 1000Go HDD -4 Go RAM - 15,6"</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													185 900 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+													
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/informatique/inf4.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+											
+										</div>
+										<img src="control/informatique/image4.jpg" id="inf4.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Disque Dur SSD interne 512 Go - Noir</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													30 000 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+													
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/informatique/inf5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+											
+										</div>
+										<img src="control/informatique/image5.jpg" id="inf5.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Mini Clavier Sans Fil avec Souris - Noir</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													10 900 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+													
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/informatique/inf5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+											
+										</div>
+										<img src="control/informatique/image5.jpg" id="inf5.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Mini Clavier Sans Fil avec Souris - Noir</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													10 900 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+													
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-white rounded shadow-lg position-relative mt-2">
+				 <a href="modele/mode/indexmale.html #vetH" class="text-decoration-none text-dark fw-bold position-absolute end-0 mt-2">
+					Voir plus
+					<i class="bi-chevron-right"></i>
+				</a>
+				<h2 class="bg-warning rounded-top text-center">style</h2>
+				<div class="p-4">
+					<div class="row justify-content-responsive">
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/mod1.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/vet1.jpg" id="mod1.html" width="170" height="170" class="rounded">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion Polos Chemise T-Shirt</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													3 999 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button title="button" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+ 						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+ 							<article>
+								<a href="modele/mode/mod2.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/vet2.jpg" id="mod2.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion Lot De 4 T-Shirt En Coton</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													8 850 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+ 						</div>
+ 						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+ 							<article>
+								<a href="modele/mode/mod3.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/vet3.jpg" id="mod3.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion Vêtements de sport à capuche</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													8 800 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+ 						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/mod4.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/vet4.jpg" id="mod4.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion Ensemble 2 Pièces Homme</h5>	
+											<p class="card-text">
+												<span class="fw-bold">
+													4 600 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/mod5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/vet5.jpg" id="mod5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion 2 Piece Short -sleeved</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													6 300 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/mod5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/vet5.jpg" id="mod5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion 2 Piece Short -sleeved</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													6 300 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-white rounded shadow-lg position-relative mt-2">
+				<a href="modele/sport/indexSport.html #spo" class="text-decoration-none text-dark fw-bold position-absolute end-0 mt-2">
+					Voir plus
+					<i class="bi-chevron-right"></i>
+				</a>
+				<h2 class="bg-warning rounded-top text-center">Sport</h2>
+				<div class="p-4">
+					<div class="row justify-content-responsive">
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/sport/sp1.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/sport/im1.jpg" id="sp1.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Bandes élastiques de résistance</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													5 400 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/sport/sp2.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/sport/im2.jpg" id="sp2.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">White Label Corde à Sauter Ultra Légère</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													1 999 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/sport/sp3.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/sport/im3.jpg" id="sp3.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Kipsta Ballon De Football Cousu Machine F100</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													9 095 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/sport/sp4.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/sport/im4.jpg" id="sp4.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">banc de MUSCULATION er KIT d'altere 2OKG</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													199 900 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/sport/sp5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/sport/im5.jpg" id="sp5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Roue Abdominale+punsh up + corde</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													8 500 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/sport/sp5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/sport/im5.jpg" id="sp5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Roue Abdominale+punsh up + corde</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													8 500 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-white rounded shadow-lg position-relative mt-2">
+				<a href="modele/mode/indexfemale.html" class="text-decoration-none text-dark fw-bold position-absolute end-0 mt-2">
+					Voir plus
+					<i class="bi-chevron-right"></i>
+				</a>
+				<h2 class="bg-warning rounded-top text-center">mode femme</h2>
+				<div class="p-4">
+					<div class="row justify-content-responsive">
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/modf1.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/modfem1.jpg" id="modf1.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion 2 anneaux élégants pour couple - argent</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													1 900 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/modf2.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/modfem2.jpg" id="modf2.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion Chaussures pour femmes Sandales</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													3 580 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/modf3.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/modfem3.jpg" id="modf3.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion 3 en 1 Sac à main femmes sac dames sac à main</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													5 560 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/modf4.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/modfem4.jpg" id="modf4.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion Luxury Starry Sky Women Watches</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													3 360 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/modf5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/modfem5.jpg" id="modf5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion 4 en 1 Sac à main femmes sac dames sac à main</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													5 990 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/mode/modf5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/mode/modfem5.jpg" id="modf5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Fashion 4 en 1 Sac à main femmes sac dames sac à main</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													5 990 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-white rounded shadow-lg position-relative mt-2">
+				<a href="modele/sport/indexSport.html #jeu" class="text-decoration-none text-dark fw-bold position-absolute end-0 mt-2">
+					Voir plus
+					<i class="bi-chevron-right"></i>
+				</a>
+				<h2 class="bg-warning rounded-top text-center">Jeux vidéos & consoles</h2>
+				<div class="p-4">
+					<div class="row justify-content-responsive">
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/jeux/jeux1.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/jeuxvideo/JE1.jpg" id="jeux1.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Ea FIFA 23 - Xbox One</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													34 900 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/jeux/jeux2.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/jeuxvideo/JE2.jpg" id="jeux2.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Autre RAGE 2 - Xbox one</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													6 000 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/jeux/jeux3.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/jeuxvideo/JE3.jpg" id="jeux3.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Sony Manette PS3 DUALSHOCK3</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													5 608 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/jeux/jeux4.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/jeuxvideo/JE4.jpg" id="jeux4.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Generic Rainbow Six </h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													7 890 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/jeux/jeux5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/jeuxvideo/JE5.jpg" id="jeux5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Sony Manette PS2 DUALSHOCK2</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													3 753 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xl-2 col-lg-3 p-0 mx-auto p-1">
+							<article>
+								<a href="modele/jeux/jeux5.html" title="Voir les détails" class="text-decoration-none text-dark">
+									<div class="card shadow-lg position-relative">
+										<div class="alert alert-warning position-absolute p-0 text-danger end-0" role="alert">
+												
+										</div>
+										<img src="control/jeuxvideo/JE5.jpg" id="jeux5.html">
+										<div class="rating">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title fs-6">Sony Manette PS2 DUALSHOCK2</h5>
+											<p class="card-text">
+												<span class="fw-bold">
+													3 753 FCFA
+												</span>
+												<br>
+												<span class="text-decoration-line-through text-muted">
+														
+												</span>
+												<br>
+												<button type="button" title="Ajouter au panier" class="btn btn-outline-warning">
+													<i class="bi-cart-plus-fill"></i>
+													Ajouter au panier
+												</button>
+											</p>
+										</div>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer class="bg-dark">
+		<div class="container pb-5 ml-3">
+			<div class="row m-4 mx-auto">
+				<div class="col-md-3 text-white fs-4 mt-3 d-flex flex-column mx-auto">
+					<h4>Nos coordonnées</h4>
+					<address class="text-white mt-3 d-flex flex-column">
+						<a href="#" class="text-white text-decoration-none"><i class="bi-phone text-white"></i> 77 777 33 44 </a>
+						<a href="#" class="text-white text-decoration-none"><i class="bi-phone text-white"></i> MEDINA RUE 22x33 </a>
+						<a href="#" class="text-white text-decoration-none"><i class="bi-envelope-fill text-white"></i>diakhitebakary60@gmail.com</a>
+					</address>
+					<hr>
+					<a href="index.html" class="text-decoration-none">
+						<img src="../../.jpg" class="me-2 text-white text-dark rounded-circle" width="50">
+						diakhite E-commerce
+					</a>
+				</div>
+				<div class="col-md-3 text-white fs-4 mt-3 d-flex flex-column mx-auto">
+					<h4>Lien vers les pages</h4>
+					<a href="index.html" class="text-white text-decoration-none"><i class="bi-house text-white"></i>Accueil</a>
+					<a href="vue/connexion/Connexion.html" class="text-white text-decoration-none"><i class="bi-person-fill text-white"></i>Connexion</a>
+					<a href="vue/contact/contact.html" class="text-white text-decoration-none"><i class="bi-phone text-white"></i>Contact</a>
+					<a href="#" class="text-white text-decoration-none"><i class="bi-question text-white"></i>Qui somme nous</a>
+				</div>
+				<div class="col-md-3 text-white fs-4 mt-3 d-inline-block flex-column mx-auto">
+					<h4>Lien vers les réseaux</h4>
+					<div class="pt-3">
+						<a href="https://www.whatsapp.com/?lang=fr">
+						<i class="icon-whatsapp">
+							<img src="image/whatsapp.png" title="Rejoignez sur whatsapp" width="50px">
+						</i>
+					</a>
+					<a href="https://www.facebook.com">
+						<i class="icon-facebook">
+							<img src="image/facebook.png" title="Suivez-nous sur Facebook" width="50px">
+						</i>
+					</a>
+					<a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZnIifQ%3D%3D%22%7D">
+						<i class="icon-twitter">
+							<img src="image/twitter.png" title="Rejoignez sur Twitter" width="50px">
+						</i>
+					</a>
+					<a href="https://www.instagram.com/">
+						<img src="image/instagram.png" title="Rejoignez sur instagram" width="50px">
+					</a>
+					</div>
+				</div>
+				<div class="col-md-3 text-white fs-4 mt-3 d-flex flex-column mx-auto">
+					<h4>Boutiques</h4>
+					<ul class="navbar-nav navbar-pills">
+						<li>Sénegal</li>
+						<li>Mali</li>
+						<li>Gambie</li>
+						<li>Mauritanie</li>
+					</ul>
+				</div>
+				<div class="col-md-3 form-floating rounded mx-auto d-block help-form">
+					<h4 class="text-white">Besoin d'aide ?</h4>
+					<div>
+						<input type="email" class="form-control" id="floatingInput" placeholder="Votre addresse E-mail" required>
+					</div>
+					<br>
+					<div class="floatingInput">
+						<textarea name="contenthelp" class="form-control" placeholder="Commentaire" id="floatingTextarea"></textarea>
+					</div>
+					<br>
+					<button type="submit" class="form-floating rounded text-dark">
+						Envoyer
+					</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

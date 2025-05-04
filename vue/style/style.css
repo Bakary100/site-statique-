@@ -1,0 +1,29 @@
+
+.help-form textarea{
+	resize: unset;
+	width: 250px;
+	height: 100px;
+
+}
+main{
+	background: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+.lien a{
+	text-align: left;
+}
+footer a img{
+	width: 50;
+}
+.time:hover{
+	transition: ;
+	transform: translateY(-10px);
+}
+.bak a{
+	
+}
+.liste img{
+	
+}
+.classe{
+	
+}
